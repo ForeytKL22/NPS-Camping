@@ -18,14 +18,14 @@ h1 {
     font-weight: bold;
 }
 
-input {
+/* input {
     position: relative;
     left: 800px;
     margin-bottom: 25px;
     width: 200px;
     height: 20px;
     border-radius: 5px;
-}
+} */
 
 body {
     background-color: rgb(87, 148, 87);
@@ -41,3 +41,45 @@ select {
     border-radius: 5px;
     height: 25px;
 }
+
+#display-campgrounds {
+    border: solid black 2px;
+    width: 300px;
+    height: 500px;
+    margin-left: 350px;
+}
+
+#display-weather {
+    border: solid black 2px;
+    width: 300px;
+    height: 500px;
+}
+
+#display {
+    display: inline;
+}
+
+
+#display-campgrounds {
+    width: 300px;
+    float: left;
+    height: 500px;
+    background: gray;
+    margin: 10px;
+
+}
+
+#display-weather {
+    width: 300px;
+    height: 500px;
+    background: yellow;
+    margin: 10px;
+    float: left;
+}
+
+.camplist {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+
+}
+
