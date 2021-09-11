@@ -11,12 +11,6 @@ var selectedPark = document.querySelector("#park-select");
 
     
 
-
-    // function demo(park) {
-    //     'http:jfweioawpfjejwapi' + park + 'apikey'
-    // }
-    
-    // demo(code)
     
     
     var getPark = function(park) {
@@ -24,7 +18,7 @@ var selectedPark = document.querySelector("#park-select");
             fetch(apiUrl)
                 .then(function(response) {
                     if (response.ok) {
-                        response.json()
+                        return response.json()
                         .then(function(data) {
                             console.log(data);
 
@@ -35,29 +29,41 @@ var selectedPark = document.querySelector("#park-select");
                                 console.log(data.data[i].name);
 
                                 var campgroundList = document.createElement("p");
-                                // campgroundList.classList = 
+                                campgroundList.classList.add("camplist"); 
                                 campgroundList.textContent = data.data[i].name;
                                 campgrounds.appendChild(campgroundList);
-
                             }
+
+                            fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + data.data[0].latitude + "&lon=" + data.data[0].longitude + "&units=imperial&appid=d3f5af43f561d831f34569cf6fef321f")
+                                .then(function(response) {
+                                    return response.json();
+                                })
+
+                                .then(function(data) {
+                                    console.log(data);
+                                });
 
 
                             // for (let i = 0; i < data.data[i].description; i++) {
                             //     console.log(data[i].description);
                                 
                             // }
-                        })
+                        });
                     }
-            })
-    }
+                });
+            }
 
 
 
 
-var getWeather = function() {
-    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + search + "&units=imperial&appid=d3f5af43f561d831f34569cf6fef321f";
-    
+var getWeather = function(data) {
+    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + search + "&units=imperial&appid=d3f5af43f561d831f34569cf6fef321f"; 
 }
+
+
+// var getWeather = function() {
+//     var apiUrl2 = ;
+// }
 
 
 
