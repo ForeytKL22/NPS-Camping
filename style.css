@@ -81,6 +81,12 @@ The content `<div>` is where all your content goes.
     font-size: 25px;
     
 }
+footer {
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    
+}
 
 
 
