@@ -1,41 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>AZ and UT National Parks</title>
-    <title>Arizona National Parks</title>
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>AZ and UT National Parks &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
-  
 <body>
 
-<!--   html-develop  -->
 <div id="layout">
+    <!-- Menu toggle -->
     <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
         <span></span>
     </a>
 
-<div id="menu-link">
-    <div class="pure-menu-list">
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#home" class="pure-menu-link">Home</a></li>
+    <div id="menu">
+        <div class="pure-menu">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#home" class="pure-menu-link">Home</a></li>
                 <li class="pure-menu-item"><a href="https://www.recreation.gov/" class="pure-menu-link">Recreation.gov</a></li>
                 <li class="pure-menu-item"><a href="https://www.nps.gov/state/az/index.htm/" class="pure-menu-link">N.P.S. AZ</a></li>
                 <li class="pure-menu-item"><a href="https://www.nps.gov/state/ut/index.htm" class="pure-menu-link">N.P.S. UT</a></li>
-        </ul>
-    </div>
-</div>
-</div>
-    <div id="main">
-    <div class="header">
-        <h1>Arizona and Utah National Parks</h1>
-        <h2>Find Some Camping Sites</h2>
+
+
+            </ul>
+        </div>
     </div>
 
-<div class="content">
-    <h2>Camping Site Location's</h2>
+    <div id="main">
+        <div class="header">
+            <h1>Arizona and Utah National Parks</h1>
+            <h2>Search For A Camping Location!</h2>
+        </div>
+
+        <div class="content">
+            <h2>Camping Sites</h2>
         <div id="search-form">
             <select name="parks" id="park-select">
                 <option value="">--Please choose a park--</option>
@@ -52,42 +54,53 @@
         </div>
     </header>
 
- <h2 class="content-subhead">Campground Options</h2>
-         <div id="display-campgrounds" ">
-         </div>
+    <div id="display">
+        <div id="display-campgrounds">
+            <p>where is the campground info</p>
+        </div>
 
- <h2 class="content-subhead">Weather Status</h2>
-     <div id="display-weather">
- </div>        
+        <div id="display-weather">
+            <p>where is the weather info</p>
+        </div>
+    </div>
+    
+             <h2 class="content-subhead">Campground Options</h2>
+            <p>
 
- <!-- <h2 class="content-subhead">How to use this layout</h2>
- <p>
-     To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/layouts/side-menu/styles.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
- </p>
- <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
- <p>
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- </p> -->
+                put chart here??
+                <div id="display">
+                    <div id="display-campgrounds">
+                    </div>
+            </p>
 
- <div class="pure-g">
-     <div class="pure-u-1-4">
-         <img class="pure-img-responsive" src="https://alongforthetrip.com/wp-content/uploads/2020/05/Horshoe-Bend-Arizona.jpg" alt="AZ">
-     </div>
-     <div class="pure-u-1-4">
-         <img class="pure-img-responsive" src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/03/26/8b/grand-canyon-national-park.rend.hgtvcom.1280.960.suffix/1491580896674.jpeg" alt="GC">
-     </div>
-     <div class="pure-u-1-4">
-         <img class="pure-img-responsive" src="https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2017/1/23/0/Original_SteveLarese_TheWave_Utah.jpg.rend.hgtvcom.966.644.suffix/1491593922491.jpeg" alt="UT">
-     </div>
-     <div class="pure-u-1-4">
-         <img class="pure-img-responsive" src="https://afar-production.imgix.net/uploads/images/afar_post_headers/images/MGjqrN1x7W/original_0._20lede_20utah_20national_20parks.jpg" alt="UT">
-     </div>
- </div>
+            <h2 class="content-subhead">Weather Status</h2>
+            <p>
+                display weather here? or to the right side of other display?
+                <div id="display-weather">
+                </div>
+            </div>        
+            </p>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
-</body>
+
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://alongforthetrip.com/wp-content/uploads/2020/05/Horshoe-Bend-Arizona.jpg" alt="AZ">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/03/26/8b/grand-canyon-national-park.rend.hgtvcom.1280.960.suffix/1491580896674.jpeg" alt="GC">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2017/1/23/0/Original_SteveLarese_TheWave_Utah.jpg.rend.hgtvcom.966.644.suffix/1491593922491.jpeg" alt="UT">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="https://afar-production.imgix.net/uploads/images/afar_post_headers/images/MGjqrN1x7W/original_0._20lede_20utah_20national_20parks.jpg" alt="UT">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/script.js"></script>
 
 <footer id="footer">
     <p>National Park Services</p>
@@ -95,5 +108,9 @@
     <h3>&copy;2021 Project 1</h3>
 </footer>
 
-</html> 
+</body>
+</html>
+
+
+© 2021 GitHub, Inc.
 
