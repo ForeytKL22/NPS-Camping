@@ -15,10 +15,9 @@ var campgrounds = document.getElementById("display-campgrounds");
 
                  for (let i = 0; i < data.data.length; i++) {
 
-             
-
-
+            
             console.log(data.data[i].name);
+            
 
             var campgroundList = document.createElement("p");
             campgroundList.classList.add("camplist"); 
@@ -44,7 +43,6 @@ var campgrounds = document.getElementById("display-campgrounds");
                                 var pTemp = document.createElement("p");
                                 var pHumidity = document.createElement("p");
                                 var pWind = document.createElement("p");
-                                var pRain = document.createElement("p");
                                 var pUv = document.createElement("p");
 
                                 dateHeader.textContent = "Weather for " + moment.unix(data.daily[0].dt).format("L");
@@ -58,9 +56,6 @@ var campgrounds = document.getElementById("display-campgrounds");
 
                                 pWind.textContent = "Wind Speed: " + data.current.wind_speed;
                                 todayWeather.appendChild(pWind);
-
-                                pRain.textContent = "Rain: " + data.daily[0].rain;
-                                todayWeather.appendChild(pRain);
 
                                 pUv.textContent = "Uv Index: " + data.current.uvi;
                                 todayWeather.appendChild(pUv);
