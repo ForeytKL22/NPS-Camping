@@ -5,7 +5,8 @@ body {
 
 .pure-img-responsive {
     max-width: 100%;
-    height: auto;
+    height: 250px;
+    width: 250px;
 }
 
 /*
@@ -42,11 +43,13 @@ The content `<div>` is where all your content goes.
 */
 .content {
     background-color: green;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 0 2em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    border-radius: 10px;
+    border: 3px black solid;
     }
 
 
@@ -73,8 +76,10 @@ The content `<div>` is where all your content goes.
 
 .content-subhead {
     margin: 50px 0 20px 0;
-    font-weight: 300;
+    font-weight: bolder;
     color: white;
+    font-size: 25px;
+    
 }
 
 
@@ -238,6 +243,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 }
+
 
 @media (max-width: 48em) {
     /* Only apply this when the window is small. Otherwise, the following
